@@ -1,6 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
+import { getFriends } from '../actions';
+
 class Friends extends React.Component {
     state = {
 
@@ -15,4 +17,10 @@ class Friends extends React.Component {
     }
 }
 
-export default Friends;
+const mapStateToProps = state => ({
+    friends: state.friends,
+    fetchingFriends: state.fetchingFriends,
+    friendsFetched: state.friendsFetched
+});
+
+export default connect(mapStateToProps, { getFriends })(Friends);
