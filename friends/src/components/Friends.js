@@ -4,14 +4,25 @@ import { connect } from 'react-redux';
 import { getFriends } from '../actions';
 
 class Friends extends React.Component {
-    state = {
+    constructor(props) {
+        super(props);
+    }
 
+    componentDidMount() {
+        this.props.getFriends();
     }
 
     render() {
         return (
             <div>
                 <h1>Friends List</h1>
+                {this.props.friends.map(friend => (
+                    <div>
+                        <p>{friend.name}</p>
+                        <p>{friend.age}</p>
+                        <p>{friend.email}</p>
+                    </div>
+                ))}
             </div>
         );
     }
