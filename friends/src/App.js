@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 
 import './App.css';
-import FriendsList from './components/FriendsList';
+import Friends from './components/Friends';
+import FriendForm from './components/FriendForm';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <FriendsList />
+        <Friends />
+        <FriendForm />
       </div>
     );
   }
 }
 
 export default App;
-
-// initial push

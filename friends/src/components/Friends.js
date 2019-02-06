@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-class FriendsList extends React.Component {
+class Friends extends React.Component {
     state = {
 
     }
@@ -15,4 +15,4 @@ class FriendsList extends React.Component {
     }
 }
 
-export default FriendsList;
+export default Friends;
