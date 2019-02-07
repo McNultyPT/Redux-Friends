@@ -78,6 +78,7 @@
     height: 125px;
     opacity: .7;
     background-color: darkseagreen;
+    border-radius: 4px;
 }
 
 .friend:hover {

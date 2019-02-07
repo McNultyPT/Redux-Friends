@@ -29,6 +29,13 @@ class FriendForm extends React.Component {
     addFriend = e => {
         e.preventDefault();
         this.props.addFriend(this.state.friend);
+        this.setState({
+            friend: {
+                name: '',
+                age: '',
+                email: ''
+            }
+        })
     };
 
     render() {
