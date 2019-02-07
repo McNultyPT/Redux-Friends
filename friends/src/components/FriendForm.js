@@ -59,8 +59,8 @@ class FriendForm extends React.Component {
 
 const mapStateToProps = state => {
     return {
-        
-    }
-}
+        isPosting: state.isPosting
+    };
+};
 
-export default FriendForm;
+export default connect(mapStateToProps, { addFriend })(FriendForm);
