@@ -49,7 +49,7 @@ function reducer(state = initialState, action) {
                 isPosting: false,
                 friends: action.payload
             };
-        case ADD_FRIEND_FAILURE:
+        case ADD_FRIEND_ERROR:
             return {
                 ...state,
                 isPosting: false,
