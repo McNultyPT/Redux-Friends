@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 
 import { addFriend } from '../actions';
 
+import './Friends.css';
+
 class FriendForm extends React.Component {
     constructor() {
         super();
@@ -31,8 +33,11 @@ class FriendForm extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className='friendFormCont'>
                 <form onSubmit={this.addFriend}>
+                    <div className='formHeader'>
+                        <h1>Add a Friend</h1>
+                    </div>
                     <input
                         type='text'
                         placeholder='Name'
